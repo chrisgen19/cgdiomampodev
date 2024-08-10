@@ -26,7 +26,7 @@ define( 'DB_NAME', 'cgdiomampo' );
 define( 'DB_USER', 'root' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'zxczxc123' );
+define( 'DB_PASSWORD', 'Cgdiomampo!0719' );
 
 /** Database hostname */
 define( 'DB_HOST', 'localhost' );
