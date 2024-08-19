@@ -50,11 +50,11 @@
                     continuous learning.
                 </p>
                 <div class="flex justify-center space-x-4 mb-8">
-                    <a href="#"
+                    <a href="#portfolio"
                         class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
                         View Projects
                     </a>
-                    <a href="#"
+                    <a href="#contact"
                         class="bg-transparent hover:bg-white hover:text-gray-900 text-white font-semibold py-2 px-4 border border-white hover:border-transparent rounded-full transition duration-300">
                         Contact Me
                     </a>
