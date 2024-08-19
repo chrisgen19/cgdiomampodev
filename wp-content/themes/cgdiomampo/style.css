@@ -241,7 +241,7 @@ html {
 }
 
 .blog-content pre {
-    background-color: #f3f4f6;
+    background-color: #282c34;
     padding: 1em;
     border-radius: 5px;
     overflow-x: auto;
@@ -249,10 +249,11 @@ html {
 }
 
 .blog-content code {
-    background-color: #f3f4f6;
+    background-color: #282c34;
     padding: 0.2em 0.4em;
     border-radius: 3px;
     font-size: 0.9em;
+    color: #f8f8f2;
 }
 
 #floating-snippets-container {
