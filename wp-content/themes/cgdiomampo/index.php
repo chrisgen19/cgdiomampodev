@@ -276,8 +276,70 @@
     <section id="contact" class="py-20 px-4 md:px-8 bg-gradient-to-br from-purple-50 to-blue-50 animated-gradient">
         <div class="max-w-3xl mx-auto">
             <h2 class="text-3xl font-bold text-center mb-8 text-white">Get in Touch</h2>
+
+            <style>
+            .contact-text ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            .contact-text ul li {
+                margin-bottom: 1rem;
+                display: flex;
+                gap: 10px;
+                color: #fff;
+            }
+
+            .contact-text ul li a {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            .contact-text ul li a:hover {
+                color: #f89875
+            }
+            </style>
+            <div class="contact-text">
+                <ul>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-mail">
+                            <rect width="20" height="16" x="2" y="4" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <a href="mailto:chrisgen19@gmail.com"><strong> Email : </strong> chrisgen19@gmail.com</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-linkedin">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                            <rect width="4" height="12" x="2" y="9" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                        <a href="https://www.linkedin.com/in/cgdiomampo/" target="_blank">
+                            <strong>LinkedIn : </strong>
+                            https://www.linkedin.com/in/cgdiomampo</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-instagram">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                        </svg>
+                        <a href="https://www.instagram.com/_gen.codes/" target="_blank">
+                            <strong>Instagram : </strong>
+                            @_gen.codes</a>
+                    </li>
+                </ul>
+            </div>
+
             <!-- Contact Form -->
-            <div id="contact-form-container" class="mx-auto mt-8 p-6 bg-white rounded-lg shadow-md">
+            <div id="contact-form-container" class="mx-auto mt-8 p-6 bg-white rounded-lg shadow-md"
+                style="display:none;">
                 <div id="form-messages" class="mb-4"></div>
 
                 <form id="contact-form" action="<?php echo esc_url(admin_url('admin-ajax.php')); ?>" method="post">
