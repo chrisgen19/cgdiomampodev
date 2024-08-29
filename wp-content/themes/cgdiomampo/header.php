@@ -19,22 +19,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php
-    if (is_single()) :
+    if (is_single()) {
         $post_id = get_queried_object_id();
         $og_title = get_the_title($post_id);
         $og_description = has_excerpt($post_id) ? get_the_excerpt($post_id) : wp_trim_words(get_the_content(null, false, $post_id), 55, '...');
-        $og_image = get_the_post_thumbnail_url($post_id, 'large');
+        $og_image = get_the_post_thumbnail_url($post_id, 'full'); // Changed to 'full' size
         $og_url = get_permalink($post_id);
         $fb_app_id = '1025179232422540'; // Your Facebook App ID
         ?>
+        <meta property="fb:app_id" content="<?php echo esc_attr($fb_app_id); ?>" />
         <meta property="og:title" content="<?php echo esc_attr($og_title); ?>" />
         <meta property="og:description" content="<?php echo esc_attr($og_description); ?>" />
         <?php if ($og_image) : ?>
         <meta property="og:image" content="<?php echo esc_url($og_image); ?>" />
         <?php endif; ?>
         <meta property="og:url" content="<?php echo esc_url($og_url); ?>" />
-        <meta property="fb:app_id" content="<?php echo esc_attr($fb_app_id); ?>" />
-    <?php endif; ?>
+        <?php
+    }
+    ?>
 
     <?php wp_head(); ?>
 </head>
