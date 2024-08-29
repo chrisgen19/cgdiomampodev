@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <?php
-    if (is_single()) :
+    if (is_single()) {
         $post_id = get_queried_object_id();
         $og_title = get_the_title($post_id);
         $og_description = has_excerpt($post_id) ? get_the_excerpt($post_id) : wp_trim_words(get_the_content(null, false, $post_id), 55, '...');
@@ -32,7 +32,9 @@
         <meta property="og:image" content="<?php echo esc_url($og_image); ?>" />
         <?php endif; ?>
         <meta property="og:url" content="<?php echo esc_url($og_url); ?>" />
-    <?php endif; ?>
+        <?php
+    }
+    ?>
 
     <?php wp_head(); ?>
 </head>
