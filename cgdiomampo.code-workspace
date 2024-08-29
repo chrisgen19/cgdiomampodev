@@ -1,0 +1,94 @@
+{
+	"folders": [
+		{
+			"path": "./wp-content/themes/cgdiomampo"
+		}
+	],
+	"settings": {
+		"editor.fontFamily": "MonoLisa",
+		//"editor.fontLigatures": "'calt' on, 'liga' off, 'zero' on, 'ss02' on",
+		"editor.fontLigatures": "'ss02' on",
+		//"editor.fontFamily": "Fira Code",
+		"workbench.colorCustomizations": {
+			"commandCenter.border": "#e7e7e799",
+			"sash.hoverBorder": "#05518e",
+			"statusBar.background": "#03355d",
+			"statusBar.foreground": "#e7e7e7",
+			"statusBarItem.hoverBackground": "#05518e",
+			"statusBarItem.remoteBackground": "#03355d",
+			"statusBarItem.remoteForeground": "#e7e7e7",
+			"titleBar.activeBackground": "#03355d",
+			"titleBar.activeForeground": "#e7e7e7",
+			"titleBar.inactiveBackground": "#03355d99",
+			"titleBar.inactiveForeground": "#e7e7e799",
+			"activityBar.activeBackground": "#05518e",
+			"activityBar.background": "#05518e",
+			"activityBar.foreground": "#e7e7e7",
+			"activityBar.inactiveForeground": "#e7e7e799",
+			"activityBarBadge.background": "#f6098d",
+			"activityBarBadge.foreground": "#e7e7e7"
+		},
+		"peacock.color": "#03355d",
+		"editor.fontSize": 12,
+		"editor.acceptSuggestionOnEnter": "on",
+		"editor.tokenColorCustomizations": {
+		
+
+			"[*Light*]": {
+				"textMateRules": [
+					{
+						"scope": "ref.matchtext",
+						"settings": {
+							"foreground": "#000"
+						}
+					}
+				]
+			},
+			"[*Dark*]": {
+				"comments": "#5a5c5d",
+				"textMateRules": [
+					{
+						"scope": "ref.matchtext",
+						"settings": {
+							"foreground": "#fff"
+						}
+					},
+					{
+						"name": "PHP Purple Tags",
+						"scope": [
+							"punctuation.section.embedded.begin.php",
+							"punctuation.section.embedded.end.php"
+						],
+						"settings": {
+							"foreground": "#ff6868"
+						}
+					},
+					// {
+					// 	"scope": "string.quoted.double.php",
+					// 	"settings": {
+					// 		"foreground": "#ffc7b0"  // Example color for double-quoted strings
+					// 	}
+					// },
+					// {
+					// 	"scope": "string.quoted.single.php",
+					// 	"settings": {
+					// 		"foreground": "#ffc7b0"  // Example color for single-quoted strings
+					// 	}
+					// },
+					// {
+					// 	"scope": "string.interpolated.php",
+					// 	"settings": {
+					// 		"foreground": "#ffc7b0"  // Example color for interpolated strings
+					// 	}
+					// }
+				]
+			}
+		},
+		"intelephense.environment.includePaths": [
+			"/Users/chrisgen19/Sites/cgdiomampo/wp-includes",
+			"/Users/chrisgen19/Sites/cgdiomampo/wp-admin",
+			"/Users/chrisgen19/Sites/cgdiomampo/wp-content/plugins/advanced-custom-fields-pro",
+			"/Users/chrisgen19/Sites/cgdiomampo/wp-content/plugins/wordpress-seo"
+		]
+	}
+}
